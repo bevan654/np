@@ -3,34 +3,103 @@ body{
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'Rubik';
+    background-color:rgb(243,250,252);
+    overflow-x: hidden;
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+
 }
 
 
 
-.navigation{
-    width:100%;
-    text-align:center;
+
+nav {
+    height: 10vh;
+    width: 100%;
+    min-width: 600px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
     background-color:transparent;
-    position: absolute;
-    font-weight:bold;
-    position: fixed;
-    color:white;
-    height:20px;
-    padding-left:20px;
-}
-
-
-
-
-.navigation a{
-    padding-left:3%;
-    padding-right:2%;
-    font-family:"Rubik";
-
+    margin: auto;
+    position:fixed;
+    z-index: 1;
 }
 .navigationBar a:hover{
     color:aqua;
 }
+nav a{
+    text-decoration: none;
+    position: relative;
+    color:white;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+nav a:after{
+    content: "";
+    position:absolute;
+    background-color:white;
+    height:2px;
+    width:0;
+    left:0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+nav a:hover:after{
+    width:100%;
+
+}
+
+
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    min-width: 600px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:transparent;
+    margin: auto;
+    position:fixed;
+    z-index: 1;
+}
+.navigationBar a:hover{
+    color:aqua;
+}
+.nav a{
+    text-decoration: none;
+    position: relative;
+    color:black;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.nav a:after{
+    content: "";
+    position:absolute;
+    background-color:black;
+    height:2px;
+    width:0;
+    left:0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.nav a:hover:after{
+    width:100%;
+
+}
+
+
 
 
 
@@ -38,7 +107,7 @@ body{
 .mainImage{
     height:100vh;
     width:100%;
-    background-image: url('images/adelaide3.jpg');
+    background-image: url('images/mainpage.jpg');
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -53,17 +122,22 @@ body{
 
 
 .sectionTitle{
-    height:200px;
+    height:400px;
     background-color:black;
-    color:white;
+    color:rgb(243,250,252);
     text-align:center;
-    line-height: 100px;
-    font-family: 'Lobster Two', cursive;
+    line-height: 150px;
+    text-shadow: 1px 1px black;
+    font-family: 'Rammetto One', cursive;
+    font-size:150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Teko', sans-serif;
+    letter-spacing:5px;
+    scroll-margin-top: 55px;
 
-}
-
-.sectionBody{
-    height:500px;
 }
 
 
@@ -100,22 +174,31 @@ body{
 }
 
 
-.explore{
-    position: relative;
-    color:white;
-    top:265px;
+.explore2{
+
+    margin-left:4vw;
+    margin-top:2vw;
+    height:15%;
     background-color:transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    border: 1px solid white;
-    padding:10px;
-    padding-right:15px;
-    padding-left:15px;
-    outline: none;  
+    color:rgb(182,70,42);
+    border: 1px solid rgb(182,70,42);
+    width:25%;
 }
 
+
+.explore2:hover{
+    background-color:rgb(182,70,42);
+    box-shadow: 10px 10px 25px 2px rgb(182,70,42,0.5);
+    color:white;
+    height:16%;
+    width:26%;
+}
+
+.explore2:active{
+    
+    transform: translateY(6px);
+      
+}
 
 
 #section1Title{
@@ -126,37 +209,21 @@ body{
 }
 
 
-.section1Text{
-    width:500px;
-    margin-left:80px;
-    margin-top:80px;
-    text-align:justify;
-}
 
 
 
 #section2Title{
-    background-image: url('images/14.avif');
-    font-size:100px;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: url('images/photoshop.png');
     
 }
 
 #section3Title{
-    background-image: url('images/banner.jpeg');
-    font-size:100px;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: url('images/HDIMAGELoL.jpg');
     
 }
 
 #section4Title{
-    margin-top:100px;
-    background-image: url('images/rest1.jpg');
-    font-size:100px;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: url('images/restaurantpicture.jpg');
 }
 
 .box{
@@ -164,33 +231,6 @@ body{
     height:30%;
 }
 
-
-.leftBox{
-    width:30%;
-    height:50%;
-    margin-left:19%;
-    margin-top:2.5%;
-    background-image:url('images/botanic4.jfif');
-    float:left;
-    background-size:cover;
-    background-repeat: no-repeat;
-
-    border-radius:10px;
-
-}
-
-.rightBox{
-    width:30%;
-    height:50%;
-    float:right;
-    margin-right:19%;
-    margin-top:2.5%;
-    background-repeat: no-repeat;
-    background-size:cover;
-    border-radius:10px;
-    background-image: url('images/botanic3.jfif')
-    
-}
 
 
 .leftBoxText{
@@ -208,15 +248,6 @@ body{
     background-image: url('botanic4.jfif');
 }
 
-.at1title{
-    margin-top:2%;
-    margin-left:auto;
-    margin-right:auto;
-    text-align:center;
-    font-size: 50px;
-    color:purple;
-    font-weight: bold;
-}
 
 .rightBoxText{
     float:right;
@@ -233,14 +264,19 @@ body{
     background-image: url('images/apple-phone.png');
 }
 
-
-#section3{
-    margin-top:200px;
+.welcomePage{
+    height:600px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url('images/blur.png');
+    background-attachment: fixed;
 }
 
-#section2Title{
-    margin-top:100px;
+.welcomeContent{
+    height:850px;
 }
+
 
 
 #section3RightBox{
@@ -253,25 +289,45 @@ body{
 
 
 
+.darkerImage{
+    
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+
+
 
 .sectionBox{
     height:500px;
     width:1200px;
     margin-left:auto;
     margin-right:auto;
-    border: 1px solid black;
     
+}
+
+.sectionBox2{
+    margin-top:120px;
+    width:1200px;
+    height:600px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .boxLeft{
     float:left;
+    margin-top:25px;
+    margin-left:75px;
 }
 
 
 .boxLeftText{
-    margin-top:50px;
+    margin-top:40px;
     width:400px;
     font-family: 'Rubik';
+    color:rgb(41,58,119);
+    text-align:justify;
 
 
 }
@@ -280,18 +336,374 @@ body{
     background-color:rgb(243,250,252);
 }
 
-.attractionTitle{
+.headings{
     font-size:30px;
+    font-family:'Rubik';
+    color:rgb(182,70,42);
+    border-bottom: 1px solid rgb(183,73,46);
+
 }
 
 .sectionBody{
     margin-top:60px;
+    height:600px;
 }
+
+
 
 .boxRight{
     height:90%;
     margin-top:60px;
-    width:500px;
+    width:600px;
     float:right;
-    background-color:lightgray;
+    background-color:rgb(164,172,180,0.5);
+    border-radius: 10px;
+    
+}
+.subLeftBox{
+    height:80%;
+    margin-top:60px;
+    width:483px;
+    float:left;
+    background-color:rgb(164,172,180,0.5);
+    border-radius: 10px;
+    margin-left:68px;
+}
+
+#section3Image{
+    background-image: url('images/hotel1.jpg')
+}
+
+#section4Image{
+    background-image: url('images/ochregrill.jpg')
+}
+
+.rightImage{
+    margin-top:30px;
+    height:450px;
+    width:600px;
+    position:absolute;
+    margin-left:550px;
+    background-image: url('images/12312.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius:10px;
+}
+
+.subLeftImage{
+    margin-top:10px;
+    height:500px;
+    width:483px;
+    position:absolute;
+    background-image: url('images/greek.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius:10px;
+    margin-left:120px;
+    
+
+}
+
+
+.contacts{
+    margin-top:20px;
+    height:100px;
+    width:400px;
+    border: 1px solid rgb(196,70,42);
+    background-color:white;
+    font-family: 'Work Sans', sans-serif;
+
+    
+}
+
+.location{
+    position: absolute;
+    border-radius: 50% 50% 50% 0;
+    border: 4px solid red;
+    width: 10px;
+    height: 10px;
+    margin:10px;
+    transform: rotate(-45deg);
+}
+
+.locationText{
+    transform: rotate(45deg);
+    font-size:10px;
+    width:100px;
+    border:1px solid black;
+}
+
+.addy{
+    height:15px;
+    width:15px;
+    margin:15px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url('images/locationmarker.jpg');
+}
+
+.phone{
+    height:10px;
+    width:10px;
+    margin:15px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url('images/phone.png');
+}
+
+
+
+.website{
+    height:20px;
+    width:20px;
+    margin:10px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url('images/website.jpg');
+}
+
+
+.addressText{
+    float:left;
+    font-size:12px;
+    margin: 15px;
+    margin-left: 40px;
+    line-height:-5px;
+}
+
+.phoneText{
+    float:left;
+    font-size:12px;
+    margin-left:40px;
+}
+
+.websiteText{
+    float:left;
+    font-size:12px;
+    margin-left:40px;
+}
+
+
+.section2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#subsectionHeading{
+    float:right;
+}
+
+.rightAlignedBox{
+    float:right;
+    margin-right: 117px;
+}
+
+
+.logo{
+    width:20%;
+    height:170px;
+    background-color:white;
+    float:left;
+    background-image: url('images/southaustralialogo.png');
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.footerContent{
+    width:79.75%;
+    float:left;
+    height:200px;
+    text-align:center;
+}
+
+.footerLinks{
+    margin-top:8vh;
+}
+
+.footerLinks a{
+    color:white;
+    text-decoration: none;
+    padding-left:100px;
+}
+
+.footerLinks a:hover{
+    font-weight:bold;
+    color:gray;
+    cursor:pointer;
+}
+
+
+
+
+.tempBox{
+    height:80px;
+}
+.informationBox{
+    margin-left:11.5%;
+    height:75%;
+    width: 45%;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url('images/beach.jpg');
+    opacity:1;
+    border-radius: 5px;
+    box-shadow: 20px 20px 50px black;
+
+}
+
+.informationContet{
+    width:90%;
+    height:80%;
+    background-color:white;
+    margin-left:80%;
+    box-shadow: 20px 20px 50px black;
+    border-radius:10px;
+
+}
+
+
+.welcomeText{
+    margin-left:10%;
+    font-size:30px;
+    color:rgb(196,70,42);
+    font-weight:bolder;
+}
+
+
+.welcomeSectionText{
+    margin-left:10%;
+    margin-top:6%;
+    margin-right:10%;
+    font-size:25px;
+    color:rgb(33,51,117);
+    font-family: 'Cantarell', sans-serif;
+}
+
+.mainBox{
+    margin-top:8%;
+    height:425px;
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.mainText{  
+    height:100px;
+    width:375px;
+    text-align: justify;
+}
+
+.imageRight{
+    width:550px;
+    height:300px;
+    float:right;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius:10px;
+    
+    background-image: url('images/adelaide_1.jpg')
+}
+
+.quote{
+    height:50px;
+    width:1000px;
+    margin-top:25%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-style: italic;
+
+}
+
+
+
+.author{
+    color:rgb(196,70,42);
+    font-weight:bold;
+    font-style: normal;
+}
+
+.mainBox2{
+    height:500px;
+    width:1000px;
+    margin-left:auto;
+    margin-top:5%;
+    margin-right:auto;
+}
+
+#mainText2{
+    float:right;
+    width:470px;
+}
+
+.imageLeft{
+    height:350px;
+    width:450px;
+    border-radius:10px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    float:left;
+    background-image:url('images/adelaide3.jpg');
+}
+
+
+.link{
+    color:black;
+
+}
+
+.link:hover{
+    text-decoration: none;
+    color:rgb(196,70,42);
+}
+
+.TITLE{
+    margin-left:auto;
+    margin-right:auto;
+    text-shadow: 1px 1px black;
+    font-size: 160px;
+     
+    letter-spacing: 10px;
+    font-family: 'Luxurious Roman', cursive;
+}
+
+
+.temp4{
+    height:30vh;
+}
+
+.footer{
+    margin-left:auto;
+    margin-right:auto;
+}
+.sectionBox3{
+    height:170px;
+    width:100%;
+    background-color:rgb(33,51,117);
+}
+
+.disclaimers{
+    height:25px;
+    width:100%;
+    margin-bottom:0px;
+    background-color:rgb(27,42,97);
+    font-size:15px;
+    position:absolute;
+    text-align:center;
+    
+}
+
+.disclaimerContent{
+    margin-top:.5vh;
+    color:darkgray;
+    
 }
